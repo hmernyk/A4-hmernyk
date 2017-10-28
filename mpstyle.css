@@ -1,0 +1,376 @@
+/* tags */
+
+header {
+    text-align: center;
+}
+
+body {
+    font-family:Calibri;
+}
+
+nav {
+    text-align: center;
+}
+
+li {
+    display: inline-block;
+    list-style-type: none;
+}
+
+a {
+    padding:8px;
+    text-align:center;
+    background-color: #f1f1f1;
+    text-decoration: none;
+    color:black;
+}
+
+li a:hover {
+    background-color:#555;
+    color:white;
+}
+
+ul {
+    padding-left:0;
+}
+
+footer {
+    background-color:#f1f1f1;
+    text-align:center;
+    border-top:3px;
+}
+
+footer img {
+    width:30px;
+    height:30px;
+}
+
+span {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+
+button {
+    background-color: #1aa3ff;
+    border:none;
+    color:white;
+    padding:8px 15px;
+    font-size:18px;
+    border-radius: 12px;
+}
+
+/********* classes and ids, organized by page *************/
+
+/***********Home page*********/
+
+/*space between nav and page content with ad and search bar*/
+#top {
+    width:100%;
+}
+
+#ad {
+    float:left;
+    width:50%;
+    height:50px;
+    vertical-align: middle;
+    background-color: green;
+    text-align: center;
+    color: white;
+}
+
+/*search bar parts*/
+.search {
+    width:100%;
+    position:relative;
+}
+
+.searchTerm {
+    float:left;
+    width:100%;
+    border:3px solid #555;
+    padding: 5px;
+    height:20px;
+    border-radius:5px;
+    outline:none;
+    color:#555;
+    text-align:center;
+}
+
+.searchButton {
+    position:absolute;
+    right:-13px;
+    width:40px;
+    height:36px;
+    border:1px solid #555;
+    cursor:pointer;
+    font-size:20px;
+    background:url('images/search.png');
+    background-position:center;
+    background-size: 20px 20px;
+    background-repeat: no-repeat;
+}
+
+.wrap {
+    float:left;
+    width:47%;
+    padding-top:5px;
+    padding-left:10px;
+    padding-right:10px;
+    padding-bottom:9px;
+}
+
+/*home page main picture*/
+#front-pic {
+    width:100%;
+    height:500px;
+    background-image: url("images/hiking_dog.jpg");
+    background-size: cover;
+    clear:both;
+}
+
+/*text on home image*/
+#front {
+    color:white;
+    font-size: 40px;
+    position:absolute;
+    left:50%;
+    top:50%;
+}
+
+#front-shop {
+    color:white;
+    font-size: 30px;
+    position:absolute;
+    left:50%;
+    top:80%;
+}
+
+/*ads on home page*/
+#crazyberry-ad {
+    float:left;
+    width:50%;
+    height:300px;
+    background-image: url("images/crazyberry.png");
+    background-size:cover;
+    margin-bottom:40px;
+}
+
+#crazyberry-avail {
+    text-align: center;
+    font-size:24px;
+    position:relative;
+    top:1%;
+}
+
+#crazyberry-browse {
+    text-align:center;
+    position:relative;
+    top:50%;
+}
+
+#gps-ad {
+    float:left;
+    width:47%;
+    height:300px;
+    background-image: url("images/gps_tracker_ad.png");
+    background-size:cover;
+    left:50%;
+    margin-left: 30px;
+    margin-bottom:40px;
+}
+
+.gps-text {
+    color:gray;
+    text-align:center;
+    position:relative;
+}
+
+#gps-quote {
+    top:50%;
+}
+
+#gps-link {
+    top:60%;
+}
+
+/*used for block text in "our story" and "description/details"*/
+.long-text {
+    text-align:center;
+    margin-left: 100px;
+    margin-right:100px;
+    margin-bottom:70px;
+}
+
+/*****************Shop page****************/
+
+#shop{
+    display:inline-block;
+}
+
+/*left filter bar*/
+#filters {
+    float:left;
+    width:25%;
+    height:500px;
+    margin-left:20px;
+}
+#browse-size {
+    float:left;
+}
+
+/*Browse by Color section*/
+.colors-grid {
+    width:150px;
+    height:auto;
+}
+
+.circle {
+    display: inline-block;
+    border-radius:50%;
+    width:40px;
+    height:40px;
+    border: 3px solid white;
+}
+
+#circle1 {
+    background-color:red;
+}
+
+#circle2 {
+    background-color: black;
+}
+
+#circle3 {
+    background-color: green;
+}
+
+#circle4 {
+      background-color: orange;
+}
+
+#circle5 {
+    background-color: blue;
+}
+
+#circle6 {
+    background-color:purple;
+}
+
+/*image grid with 4 products*/
+.gallery1 {
+    margin:5px;
+    border:1px solid #ccc;
+    width:300px;
+    display:inline-block;
+    margin-top: 30px;
+    text-align:center;
+}
+
+.gallery1 img {
+    width:100%;
+    height:140px;
+}
+
+/****************Details page****************/
+
+/*image grid with one larger image*/
+.gallery2 {
+    border:1px solid #ccc;
+    width:300px;
+    float:top;
+    display:inline-block;
+}
+
+.gallery2 img {
+    width:100%;
+    height:170px;
+}
+
+#large-img {
+    height:345px;
+}
+
+/*Color selection*/
+
+.colors-line {
+    width: 100%;
+    height:auto;
+}
+
+#item-color {
+    color:gray;
+}
+
+/*
+#circle7 {
+    background-color: black;
+    border:3px solid #ccc;
+} */
+
+/*care instructions color*/
+#wash {
+    color:gray;
+}
+
+/*page placement of other page sections*/
+#order-details {
+    float:right;
+    margin-right:200px;
+}
+
+#suggestions {
+    float:right;
+    margin-right:100px;
+    margin-top:15px;
+    text-align: center;
+}
+
+#suggestions img {
+    width:150px;
+    height:auto;
+    border-style:solid;
+    border-width:1px;
+    border-radius:8px;
+    border-color:#ccc;
+}
+
+#cart-counter {
+    display:inline-flex;
+}
+
+/*******Cart page***********/
+
+.cart-item {
+    display:inline;
+}
+
+.cart-img img {
+    width:100px;
+    height:100px;
+    float:left;
+    margin-left:50px;
+    margin-top:20px;
+}
+
+.cart-item-details {
+    display: inline-block;
+    margin-left:30px;
+}
+
+.checkout-button {
+    display:inline-block;
+}
+
+.selected-color {
+    border:3px solid #ccc;
+}
+
+.delete {
+    border:none;
+    font-size:15px;
+    background-color:white;
+    color:gray;
+    font-style:bold;
+    padding:4px;
+}
